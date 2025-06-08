@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin: 0;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+header {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1.5px;
+  user-select: none;
+}
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+.balance {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.balance h2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #cfcfe1;
+}
+.balance-amount {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.3rem 0 0 0;
+  color: #fff;
+}
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.inc-exp-box {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  width: 47%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  text-align: center;
+}
+.inc-exp-box h4 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #cfcfe1;
+}
+.inc-exp-box p {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #e0e0ff;
+}
+.inc-exp-box.income p {
+  color: #4ade80; /* green */
+}
+.inc-exp-box.expense p {
+  color: #f87171; /* red */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+input[type="text"], input[type="number"], select {
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+}
+select {
+  color: #555;
+}
+button {
+  background-color: #6c63ff;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #5752d2;
+}
+ul.transaction-list {
+  max-height: 320px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.transaction-list li {
+  background: rgba(0,0,0,0.2);
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  font-weight: 600;
+  cursor: default;
+}
+ul.transaction-list li.income {
+  border-right: 6px solid #4ade80;
+}
+ul.transaction-list li.expense {
+  border-right: 6px solid #f87171;
+}
+.transaction-description {
+  flex-grow: 1;
+}
+.transaction-amount {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+.transaction-amount.income {
+  color: #4ade80;
+}
+.transaction-amount.expense {
+  color: #f87171;
+}
+.btn-delete {
+  background: transparent;
+  border: none;
+  color: #f87171;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+.btn-delete:hover {
+  color: #ff4949;
+}
+/* Scrollbar customization */
+ul.transaction-list::-webkit-scrollbar {
+  width: 8px;
+}
+ul.transaction-list::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 10px;
+}
+ul.transaction-list::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+@media (max-width: 520px) {
+  .container {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.75rem 0;
+  }
+}
